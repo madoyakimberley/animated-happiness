@@ -1,0 +1,24 @@
+Purpose of the project
+-React Props
+-React Mapping:<Array data>
+
+1.Design ->
+  index.jsx:Full application
+  UsersSection
+  ===>index.jsx :user entry point
+  ===>SingleUser.jsx
+  ===>Mapp
+
+Step 1:
+    Create folder inside src
+           for the project
+           Name:3GithubUsers
+Step 2: inside the folder
+       create an index.jsx
+       ->component <Name>
+         ->comming soon
+Step 3:Render the index.js 
+      from your folder in main.js
+      and see the results
+
+        
