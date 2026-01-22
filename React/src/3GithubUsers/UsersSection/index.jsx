@@ -1,30 +1,23 @@
 import SingleUserV2 from "./SingleUserV2";
 import users from "./../users.json";
 
+// users is an array
+//loop -> for loops
+//map method ->
+
 function UsersSection() {
-  const user0 = users[8];
-  const user1 = users[1];
-  const user2 = users[3];
-  //console.log(user);
-  return (
-    <div>
+  function toMap(item, index) {
+    return (
       <SingleUserV2
-        avatar_url={user0.avatar_url}
-        login={user0.login}
-        url={user0.url}
+        key={item.id}
+        avatar_url={item.avatar_url}
+        url={item.html_url}
+        login={item.login}
       />
-      <SingleUserV2
-        avatar_url={user1.avatar_url}
-        login={user1.login}
-        url={user1.url}
-      />
-      <SingleUserV2
-        avatar_url={user2.avatar_url}
-        login={user2.login}
-        url={user2.url}
-      />
-    </div>
-  );
+    );
+  }
+
+  return <div className=" flex flex-wrap">{users.map(toMap)}</div>;
 }
 
 export default UsersSection;

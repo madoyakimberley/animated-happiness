@@ -68,3 +68,21 @@ Step 10:Modular Compenent
        ->favNumber
       2.Pass the actuall data from ours 
         avatar_url,login,url
+
+  Step 11:Map method
+
+Step 12:Use the url to navigate
+    ->Instead of showing the url have a button that we  can click
+    ->Events:<clicks,hovers>Side effect >callback
+
+Step 14:Search Section.(onChange:forms,State managent)
+   ->Search Section:
+     Input to search a specific person
+   ->TextInput:<search> Button for searching
+
+Step 15:To learn state. 
+      ->Main section 
+      ->Numbers Decrement or increment the Numbers
+      ->Create Folder LearnBasicState: Current project Temp
+      ->Create file Numbers
+      ->increment button and decrement button

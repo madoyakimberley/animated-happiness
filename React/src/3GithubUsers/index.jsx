@@ -1,9 +1,12 @@
 import UsersSection from "./UsersSection";
+import SearchSection from "./SearchSection";
+import StateNumber from "./LearningSection/StateNumber";
 
 function App() {
   return (
     <div>
-      <h1>Comming soon</h1>
+      <StateNumber />
+      <SearchSection />
       <UsersSection />
     </div>
   );
