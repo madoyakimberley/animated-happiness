@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 
 function UsersSection({ page }) {
   const [users, setUsers] = useState([]);
-  if (page !== "users") {
-    return null;
-  }
+  const [loading, setLoading] = useState(true);
 
   const getUsers = async () => {
     try {
@@ -14,20 +12,44 @@ function UsersSection({ page }) {
         url: "https://api.github.com/users",
         method: "GET",
       });
-      console.log(response);
+      //console.log(response);
+      const data = response.data;
+      console.log("The data is", data);
+      setUsers(data);
+      setLoading(false);
     } catch (e) {
-      console.log("Faield to get githun useers");
       console.log(e);
+      console.log("Error fetching github users");
+      alert("Failed to get github users. Try again latter");
+      console.log(e);
+      setLoading(false);
     }
   };
 
   useEffect(() => {
-    getUsers();
+    // getUsers();
+    /*
+     you can use set timeout to simulate slow internet connection
+     
+    */
+    setTimeout(() => {
+      getUsers();
+    }, 3000);
   }, []);
-  //console.log(user
 
+  if (page !== "users") {
+    return null;
+  }
+
+  if (loading === true) {
+    return (
+      <div className=" h-screen w-screen flex justify-center items-center">
+        <div className=" animate-pulse text-4xl opacity-30">Loading</div>
+      </div>
+    );
+  }
   return (
-    <div>
+    <div className=" flex flex-wrap">
       {users.map((user, index) => (
         <SingleUserV2
           avatar_url={user.avatar_url}
