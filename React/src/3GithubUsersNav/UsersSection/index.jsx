@@ -1,8 +1,9 @@
 import SingleUserV2 from "./SingleUserV2";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Navigation from "../Navigation";
 
-function UsersSection({ page }) {
+function UsersSection() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -37,10 +38,6 @@ function UsersSection({ page }) {
     }, 3000);
   }, []);
 
-  if (page !== "users") {
-    return null;
-  }
-
   if (loading === true) {
     return (
       <div className=" h-screen w-screen flex justify-center items-center">
@@ -50,6 +47,7 @@ function UsersSection({ page }) {
   }
   return (
     <div className=" flex flex-wrap">
+      {/* <Navigation /> */}
       {users.map((user, index) => (
         <SingleUserV2
           avatar_url={user.avatar_url}

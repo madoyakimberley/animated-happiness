@@ -1,0 +1,88 @@
+Purpose of the project
+-React Props
+-React Mapping:<Array data>
+
+1.Design ->
+  index.jsx:Full application
+  UsersSection
+  ===>index.jsx :user entry point
+  ===>SingleUser.jsx
+  ===>Mapp
+
+Step 1:
+    Create folder inside src
+           for the project
+           Name:3GithubUsers
+Step 2: inside the folder
+       create an index.jsx
+       ->component <Name>
+         ->comming soon
+Step 3:Render the index.js 
+      from your folder in main.js
+      and see the results
+
+Step 4:Create the user Section component
+    ->all of our users.
+    Inside your project folder 
+    create a folder called 
+    UsersSection 
+    ->inside the folder 
+    create an index.jsx file
+    render the text
+     <h1>Users section comming soon</h1>
+    ->Render this compnent inside 
+    the main App Component
+
+Step 5:
+  ->copy provided list of github users
+  inside your project as json.
+
+Step 6:Display raw data
+  ->Create a single user card
+  Create a file called SingleUser
+  ->inside folder UsersSection
+  ->Inside there render information
+  from  a single.
+  ->copy one user object to use
+
+Step 7:Use brackets to display data
+     Ensure before display data you
+     are able to read by console.log:
+
+Step 8.  Diplay Whole list.
+In UserSection Components
+   import the full list all users ie users.json 
+   ->console.log it to see if you get the full
+Step 9.Using index to print one user
+     
+Step 10:Modular Compenent
+     -Create SingleUserV2 component
+     this should take in data
+     -url,avatar_url,login externally and display
+     1.Create component and console.log props
+       -> favourite country :string
+       -> address :string
+       -> isMarried:Boolean
+       -> pet:{} object
+       ->colors:[] //
+       ->favNumber
+      2.Pass the actuall data from ours 
+        avatar_url,login,url
+
+  Step 11:Map method
+
+Step 12:Use the url to navigate
+    ->Instead of showing the url have a button that we  can click
+    ->Events:<clicks,hovers>Side effect >callback
+
+Step 14:Search Section.(onChange:forms,State managent)
+   ->Search Section:
+     Input to search a specific person
+   ->TextInput:<search> Button for searching
+
+Step 15:To learn state. 
+      ->Main section 
+      ->Numbers Decrement or increment the Numbers
+      ->Create Folder LearnBasicState: Current project Temp
+      ->Create file Numbers
+      ->increment button and decrement button

@@ -2,15 +2,12 @@ import { useState } from "react";
 import axios from "axios";
 import FoundUser from "./FoundUser";
 import Message from "./Message";
+import Navigation from "./../Navigation";
 
-function SearchSection({ page }) {
+function SearchSection() {
   const [value, setValue] = useState("");
   const [user, setUser] = useState(null); //no value // {}
   const [message, setMessage] = useState(null);
-
-  if (page !== "find") {
-    return null;
-  }
 
   const handleChange = (e) => {
     setValue(e.target.value);
@@ -42,6 +39,7 @@ function SearchSection({ page }) {
 
   return (
     <div>
+      {/* <Navigation /> */}
       <div className=" flex justify-center my-4">
         <div className=" flex items-center">
           <input className=" py-0.5 mx-2 border" onChange={handleChange} />
