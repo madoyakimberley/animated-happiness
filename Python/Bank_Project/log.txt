@@ -1,0 +1,120 @@
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:18:34
+Function: get_account_by_id_no
+Time Taken: 0.0005390644073486328 seconds
+Inputs: args=('5678',), kwargs={}
+Result: None
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:18:34
+Function: create_account
+Time Taken: 0.0018088817596435547 seconds
+Inputs: args=(), kwargs={'id_no': '5678', 'name': 'Kim'}
+Result: {'account_no': '5678', 'id_no': '5678', 'name': 'Kim', 'transaction_history': [], 'balance': 0, 'password': 'password123'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:18:34
+Function: get_account_by_id_no
+Time Taken: 0.00022029876708984375 seconds
+Inputs: args=('5678',), kwargs={}
+Result: {'account_no': '5678', 'id_no': '5678', 'name': 'Kim', 'transaction_history': [], 'balance': 0, 'password': 'password123'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:18:34
+Function: create_account
+Time Taken: 0.0006458759307861328 seconds
+Inputs: args=(), kwargs={'id_no': '5678', 'name': 'Lefty'}
+Result: None
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:19:04
+Function: get_account_by_id_no
+Time Taken: 0.00047397613525390625 seconds
+Inputs: args=('5678',), kwargs={}
+Result: {'account_no': '5678', 'id_no': '5678', 'name': 'Kim', 'transaction_history': [], 'balance': 0, 'password': 'password123'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:19:04
+Function: create_account
+Time Taken: 0.0010950565338134766 seconds
+Inputs: args=(), kwargs={'id_no': '5678', 'name': 'Kim'}
+Result: None
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:19:04
+Function: get_account_by_id_no
+Time Taken: 0.00022292137145996094 seconds
+Inputs: args=('5678',), kwargs={}
+Result: {'account_no': '5678', 'id_no': '5678', 'name': 'Kim', 'transaction_history': [], 'balance': 0, 'password': 'password123'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:19:04
+Function: create_account
+Time Taken: 0.0005769729614257812 seconds
+Inputs: args=(), kwargs={'id_no': '5678', 'name': 'Lefty'}
+Result: None
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:19:20
+Function: get_account_by_id_no
+Time Taken: 0.0003788471221923828 seconds
+Inputs: args=('5678',), kwargs={}
+Result: {'account_no': '5678', 'id_no': '5678', 'name': 'Kim', 'transaction_history': [], 'balance': 0, 'password': 'password123'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:21:07
+Function: get_account_by_id_no
+Time Taken: 0.00025010108947753906 seconds
+Inputs: args=('5678',), kwargs={}
+Result: {'account_no': '5678', 'id_no': '5678', 'name': 'Kim', 'transaction_history': [], 'balance': 0, 'password': 'password123'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:21:07
+Function: create_account
+Time Taken: 0.0005869865417480469 seconds
+Inputs: args=(), kwargs={'id_no': '5678', 'name': 'Kim', 'password': 'password123'}
+Result: None
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:21:07
+Function: get_account_by_id_no
+Time Taken: 0.00010538101196289062 seconds
+Inputs: args=('123',), kwargs={}
+Result: None
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:21:07
+Function: create_account
+Time Taken: 0.002913951873779297 seconds
+Inputs: args=(), kwargs={'id_no': '123', 'name': 'Lefty', 'password': 'password1233'}
+Result: {'account_no': '123', 'id_no': '123', 'name': 'Lefty', 'transaction_history': [], 'balance': 0, 'password': 'password1233'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:21:22
+Function: get_account_by_id_no
+Time Taken: 0.0003502368927001953 seconds
+Inputs: args=('5678',), kwargs={}
+Result: {'account_no': '5678', 'id_no': '5678', 'name': 'Kim', 'transaction_history': [], 'balance': 0, 'password': 'password123'}
+-----------------------------------------------------------
+
+--------------------------- LOG ---------------------------
+Timestamp: 2026-02-18 16:21:07
+Function: login
+Time Taken: 27.508891820907593 seconds
+Inputs: args=(), kwargs={}
+Result: True
+-----------------------------------------------------------
